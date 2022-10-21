@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html,
+    body,
+    .wrapper {
+        height: 100%;
+    }
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+    form {
+        background: rgb(214, 236, 16);
+        width: 300px;
+        height: 400px;
+        text-align: center;
+    }
+    .wrapper {
+        display: flex;
+    }
+    .left,
+    .rihgt {
+        flex: 1;
+    }
+    figure,
+    img {
+        height: 100%;
+        width: 100%;
+    }
+    img {
+        object-fit: cover;
+    }
+    figure {
+        line-height: 0;
+    }
+    .left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .button {
+        background: blue;
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: 8px;
+        font-size: 1.5rem;
+    }
+    .tittle {
+        font-size: 2.5rem;
+    }
+    .input {
+        font-size: 1.5rem;
+        border-radius: 8px;
+        border: 1px solid grey;
+    }
+    .row {
+        margin-bottom: 2rem;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="left">
+            <form>
+                <h1 class="title">
+                    Sign in
+                </h1>
+                <div class="row">
+                    <input class="input" type="text"
+                    placeholder="user@example.org">
+                </div>
+                <div class="row">
+                    <input class="input"
+                    type="password"
+                    placeholder="Password">
+                </div>
+                <div class="row">
+                    <button class="button">Go!</
+                        button>
+                </div>
+            </form>
+            <div class="banner"></div>
+        </div>
+        <div class="right">
+            <figure>
+                <img src="https://static-cse.canva.com/blob/847064/29.jpg" alt="">
+            </figure>
+        </div>
+    </div>
+</body>
+</html>
